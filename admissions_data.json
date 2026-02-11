@@ -1,0 +1,41 @@
+{
+    "admissions": {
+        "general": {
+            "apply": "You can apply for admission through our online portal at admissions.university.edu. The application process involves: 1. Online registration, 2. Document upload, 3. Application fee payment, 4. Submission of online form.",
+            "requirements": "General admission requirements include: High school diploma or equivalent, Minimum GPA of 2.5, Standardized test scores (SAT/ACT), English proficiency test (TOEFL/IELTS for international students), Letters of recommendation, Personal statement.",
+            "deadlines": "Important deadlines for Fall 2024: Early Decision - November 1, 2023, Regular Decision - January 15, 2024, Financial Aid - March 1, 2024. For Spring 2024: November 15, 2023."
+        },
+        "documents": {
+            "required": "Required documents: 1. Completed application form, 2. Official transcripts, 3. Test scores (SAT/ACT), 4. English proficiency scores, 5. 2-3 letters of recommendation, 6. Personal statement/Essay, 7. Resume/CV, 8. Passport copy (international students).",
+            "transcripts": "Official transcripts from all previous educational institutions must be sent directly to the admissions office. Unofficial transcripts can be uploaded for initial review.",
+            "recommendation": "Letters of recommendation should be from teachers, counselors, or employers who can speak to your academic abilities and character."
+        },
+        "eligibility": {
+            "undergraduate": "Undergraduate eligibility: High school graduate or equivalent, Minimum 2.5 GPA, SAT minimum 1000 or ACT composite 20, TOEFL 80 iBT or IELTS 6.5 for international students.",
+            "graduate": "Graduate eligibility: Bachelor's degree from accredited institution, Minimum 3.0 GPA, GRE/GMAT scores (program dependent), TOEFL 90 iBT or IELTS 7.0 for international students.",
+            "international": "International students must have: Valid passport, Student visa eligibility, English proficiency scores, Financial documentation, Translated and evaluated transcripts."
+        },
+        "courses": {
+            "undergraduate": "Undergraduate programs: Computer Science, Business Administration, Psychology, Biology, Engineering, English Literature, Economics, Political Science, Art History, Mathematics.",
+            "graduate": "Graduate programs: MBA, MS in Computer Science, MA in Psychology, MS in Engineering, MPH in Public Health, MFA in Creative Writing, MS in Data Science.",
+            "engineering": "Engineering programs: Computer Engineering, Electrical Engineering, Mechanical Engineering, Civil Engineering, Chemical Engineering, Biomedical Engineering."
+        },
+        "fees": {
+            "tuition": "Tuition fees per semester: In-state undergraduate: $5,000, Out-state undergraduate: $12,000, Graduate programs: $8,000-$15,000 depending on program.",
+            "application": "Application fee: $50 for domestic students, $75 for international students. Fee waivers available for eligible students.",
+            "financial_aid": "Financial aid options: Merit-based scholarships, Need-based grants, Work-study programs, Student loans. FAFSA required for US students."
+        }
+    },
+    "keywords": {
+        "apply": ["apply", "application", "admission", "how to", "process"],
+        "documents": ["document", "transcript", "letter", "recommendation", "certificate", "upload"],
+        "deadline": ["deadline", "date", "last date", "due", "when"],
+        "eligibility": ["eligible", "eligibility", "qualify", "requirements", "criteria", "gpa", "sat", "toefl"],
+        "courses": ["course", "program", "major", "degree", "subject", "study"],
+        "fees": ["fee", "cost", "tuition", "financial", "aid", "scholarship", "money"],
+        "international": ["international", "foreign", "visa", "overseas", "toefl", "ielts"],
+        "greetings": ["hello", "hi", "hey", "greetings", "good morning", "good afternoon"],
+        "thanks": ["thank", "thanks", "appreciate"],
+        "exit": ["bye", "goodbye", "exit", "quit", "end"]
+    }
+}

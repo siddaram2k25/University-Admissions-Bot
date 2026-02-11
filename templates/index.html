@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Admissions Bot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1><i class="fas fa-university"></i> University Admissions Bot</h1>
+                <p>Your AI Assistant for Admission Guidance</p>
+            </div>
+            <button id="resetBtn" class="reset-btn">
+                <i class="fas fa-redo-alt"></i> New Chat
+            </button>
+        </header>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Chat Section -->
+            <div class="chat-section">
+                <div class="chat-container" id="chatContainer">
+                    <div class="message bot-message">
+                        <div class="avatar">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="message-content">
+                            <p>🎓 Welcome to the University Admissions Bot!</p>
+                            <p>I'm here to help you with:</p>
+                            <ul>
+                                <li>Admission requirements and procedures</li>
+                                <li>Required documents</li>
+                                <li>Eligibility criteria</li>
+                                <li>Courses and programs</li>
+                                <li>Important deadlines</li>
+                                <li>Fees and financial aid</li>
+                            </ul>
+                            <p>Try our <strong>Eligibility Checker</strong> by typing "check my eligibility"!</p>
+                            <p>How can I help you today? 😊</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Input Area -->
+                <div class="input-area">
+                    <div class="input-wrapper">
+                        <input 
+                            type="text" 
+                            id="userInput" 
+                            placeholder="Type your message here..."
+                            autocomplete="off"
+                        >
+                        <button id="sendBtn">
+                            <i class="fas fa-paper-plane"></i> Send
+                        </button>
+                    </div>
+                    <div class="suggestions">
+                        <span class="suggestion-chip" onclick="sendQuickMessage('How do I apply for admission?')">
+                            How to apply?
+                        </span>
+                        <span class="suggestion-chip" onclick="sendQuickMessage('What documents are required?')">
+                            Documents
+                        </span>
+                        <span class="suggestion-chip" onclick="sendQuickMessage('What are the deadlines?')">
+                            Deadlines
+                        </span>
+                        <span class="suggestion-chip" onclick="sendQuickMessage('What courses are available?')">
+                            Courses
+                        </span>
+                        <span class="suggestion-chip" onclick="sendQuickMessage('Check my eligibility')">
+                            Check Eligibility
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Eligibility Form (Hidden by default) -->
+            <div id="eligibilityForm" class="eligibility-form" style="display: none;">
+                <div class="form-header">
+                    <h3><i class="fas fa-clipboard-check"></i> Eligibility Checker</h3>
+                    <button class="close-btn" onclick="hideEligibilityForm()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                
+                <div class="form-body">
+                    <div class="form-group">
+                        <label>Program Level</label>
+                        <select id="educationLevel">
+                            <option value="">Select program level</option>
+                            <option value="ug">Undergraduate</option>
+                            <option value="g">Graduate</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>GPA (0.0 - 4.0)</label>
+                        <input type="number" id="gpa" step="0.1" min="0" max="4" placeholder="Enter your GPA">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Test Type</label>
+                        <select id="testType">
+                            <option value="">Select test type</option>
+                            <option value="sat">SAT</option>
+                            <option value="act">ACT</option>
+                            <option value="gre">GRE</option>
+                            <option value="gmat">GMAT</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Test Score</label>
+                        <input type="number" id="testScore" placeholder="Enter your test score">
+                    </div>
+
+                    <button id="checkEligibilityBtn" class="check-btn">
+                        <i class="fas fa-search"></i> Check Eligibility
+                    </button>
+
+                    <div id="eligibilityResult" class="eligibility-result"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 University Admissions Bot. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

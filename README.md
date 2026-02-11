@@ -23,4 +23,4 @@ The University Admissions Bot is a rule-based chatbot designed to help students 
 
 ## ▶️ How to Run
 ```bash
-python chatbot.py
+python app.py
